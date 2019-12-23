@@ -2,7 +2,7 @@ class Student < ActiveRecord::Base
 
   def name
     Student.all do |student|
-      @student.to_s = student(params[:first_name])
+      @student = student
     end
   end
 end
